@@ -51,7 +51,7 @@ class TasksViewController: UITableViewController {
         cell.contentConfiguration = content
         return cell
     }
- 
+    
     override func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
         
         let task = indexPath.section == 0 ? currentTasks[indexPath.row] : completedTasks[indexPath.row]
