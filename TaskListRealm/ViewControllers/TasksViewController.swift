@@ -93,6 +93,7 @@ class TasksViewController: UITableViewController {
     }
 }
 
+// MARK: - Private Methods
 extension TasksViewController {
     private func showAlert(with task: Task? = nil, completion: (() -> Void)? = nil) {
         let title = task != nil ? "Edit Task" : "New Task"

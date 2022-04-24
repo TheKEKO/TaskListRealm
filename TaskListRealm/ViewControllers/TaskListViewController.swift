@@ -112,6 +112,7 @@ class TaskListViewController: UITableViewController {
     }
 }
 
+// MARK: - Private Methods
 extension TaskListViewController {
     
     private func showAlert(with taskList: TaskList? = nil, completion: (() -> Void)? = nil) {

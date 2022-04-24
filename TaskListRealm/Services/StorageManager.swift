@@ -5,7 +5,6 @@
 //  Created by Aleksandr F. on 24.04.2022.
 //
 
-import Foundation
 import RealmSwift
 
 class StorageManager {
