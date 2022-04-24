@@ -8,22 +8,30 @@
 
 /* Begin PBXBuildFile section */
 		D4043CB12815892B00690FF2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4043CB02815892B00690FF2 /* AppDelegate.swift */; };
-		D4043CB32815892B00690FF2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4043CB22815892B00690FF2 /* SceneDelegate.swift */; };
-		D4043CB52815892B00690FF2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4043CB42815892B00690FF2 /* ViewController.swift */; };
+		D4043CB52815892B00690FF2 /* TaskListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4043CB42815892B00690FF2 /* TaskListViewController.swift */; };
 		D4043CB82815892B00690FF2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D4043CB62815892B00690FF2 /* Main.storyboard */; };
 		D4043CBA2815892D00690FF2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D4043CB92815892D00690FF2 /* Assets.xcassets */; };
 		D4043CBD2815892D00690FF2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D4043CBB2815892D00690FF2 /* LaunchScreen.storyboard */; };
+		D4043CCB28158A1900690FF2 /* TaskList.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4043CCA28158A1900690FF2 /* TaskList.swift */; };
+		D4043CCD28158A3700690FF2 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4043CCC28158A3700690FF2 /* DataManager.swift */; };
+		D4043CCF28158A4700690FF2 /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4043CCE28158A4700690FF2 /* StorageManager.swift */; };
+		D4043CD128158A6300690FF2 /* AlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4043CD028158A6300690FF2 /* AlertController.swift */; };
+		D4043CD328158A8200690FF2 /* TasksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4043CD228158A8200690FF2 /* TasksViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		D4043CAD2815892B00690FF2 /* TaskListRealm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TaskListRealm.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4043CB02815892B00690FF2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D4043CB22815892B00690FF2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		D4043CB42815892B00690FF2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D4043CB42815892B00690FF2 /* TaskListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListViewController.swift; sourceTree = "<group>"; };
 		D4043CB72815892B00690FF2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D4043CB92815892D00690FF2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D4043CBC2815892D00690FF2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D4043CBE2815892D00690FF2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D4043CCA28158A1900690FF2 /* TaskList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskList.swift; sourceTree = "<group>"; };
+		D4043CCC28158A3700690FF2 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		D4043CCE28158A4700690FF2 /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
+		D4043CD028158A6300690FF2 /* AlertController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertController.swift; sourceTree = "<group>"; };
+		D4043CD228158A8200690FF2 /* TasksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +64,67 @@
 		D4043CAF2815892B00690FF2 /* TaskListRealm */ = {
 			isa = PBXGroup;
 			children = (
-				D4043CB02815892B00690FF2 /* AppDelegate.swift */,
-				D4043CB22815892B00690FF2 /* SceneDelegate.swift */,
-				D4043CB42815892B00690FF2 /* ViewController.swift */,
-				D4043CB62815892B00690FF2 /* Main.storyboard */,
-				D4043CB92815892D00690FF2 /* Assets.xcassets */,
-				D4043CBB2815892D00690FF2 /* LaunchScreen.storyboard */,
-				D4043CBE2815892D00690FF2 /* Info.plist */,
+				D4043CC42815895800690FF2 /* ViewControllers */,
+				D4043CC52815897600690FF2 /* Models */,
+				D4043CC62815899200690FF2 /* Services */,
+				D4043CC7281589B000690FF2 /* Storyboards */,
+				D4043CC8281589B700690FF2 /* Resources */,
+				D4043CC9281589BE00690FF2 /* App */,
 			);
 			path = TaskListRealm;
+			sourceTree = "<group>";
+		};
+		D4043CC42815895800690FF2 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				D4043CB42815892B00690FF2 /* TaskListViewController.swift */,
+				D4043CD228158A8200690FF2 /* TasksViewController.swift */,
+				D4043CD028158A6300690FF2 /* AlertController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		D4043CC52815897600690FF2 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D4043CCA28158A1900690FF2 /* TaskList.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		D4043CC62815899200690FF2 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				D4043CCE28158A4700690FF2 /* StorageManager.swift */,
+				D4043CCC28158A3700690FF2 /* DataManager.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		D4043CC7281589B000690FF2 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				D4043CB62815892B00690FF2 /* Main.storyboard */,
+				D4043CBB2815892D00690FF2 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		D4043CC8281589B700690FF2 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D4043CB92815892D00690FF2 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		D4043CC9281589BE00690FF2 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				D4043CB02815892B00690FF2 /* AppDelegate.swift */,
+				D4043CBE2815892D00690FF2 /* Info.plist */,
+			);
+			path = App;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -111,6 +171,9 @@
 				Base,
 			);
 			mainGroup = D4043CA42815892B00690FF2;
+			packageReferences = (
+				D4043CD428158B2900690FF2 /* XCRemoteSwiftPackageReference "realm-swift" */,
+			);
 			productRefGroup = D4043CAE2815892B00690FF2 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -138,9 +201,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D4043CB52815892B00690FF2 /* ViewController.swift in Sources */,
+				D4043CCB28158A1900690FF2 /* TaskList.swift in Sources */,
+				D4043CCD28158A3700690FF2 /* DataManager.swift in Sources */,
+				D4043CCF28158A4700690FF2 /* StorageManager.swift in Sources */,
+				D4043CD328158A8200690FF2 /* TasksViewController.swift in Sources */,
+				D4043CB52815892B00690FF2 /* TaskListViewController.swift in Sources */,
+				D4043CD128158A6300690FF2 /* AlertController.swift in Sources */,
 				D4043CB12815892B00690FF2 /* AppDelegate.swift in Sources */,
-				D4043CB32815892B00690FF2 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,7 +356,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = VWJHPQLGW8;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = TaskListRealm/Info.plist;
+				INFOPLIST_FILE = TaskListRealm/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -317,7 +384,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = VWJHPQLGW8;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = TaskListRealm/Info.plist;
+				INFOPLIST_FILE = TaskListRealm/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -358,6 +425,17 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D4043CD428158B2900690FF2 /* XCRemoteSwiftPackageReference "realm-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-swift.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
 	};
 	rootObject = D4043CA52815892B00690FF2 /* Project object */;
 }
