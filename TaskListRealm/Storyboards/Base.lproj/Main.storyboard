@@ -9,7 +9,7 @@
         <!--Task Lists-->
         <scene sceneID="dPc-tC-pRG">
             <objects>
-                <tableViewController id="Oye-V9-bVR" customClass="TaskListViewController" customModule="RealmApp" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="Oye-V9-bVR" customClass="TaskListViewController" customModule="TaskListRealm" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="wKb-ss-CDv">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -22,7 +22,7 @@
                                 <segment title="A-Z"/>
                             </segments>
                             <connections>
-                                <action selector="sortingList:" destination="Oye-V9-bVR" eventType="valueChanged" id="sB0-2g-pvW"/>
+                                <action selector="sortingList:" destination="Oye-V9-bVR" eventType="valueChanged" id="SnA-dl-eYM"/>
                             </connections>
                         </segmentedControl>
                         <prototypes>
@@ -49,6 +49,9 @@
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="I9c-tG-ebh" kind="show" id="qVN-2L-qad"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -65,14 +68,14 @@
         <!--Tasks View Controller-->
         <scene sceneID="BJv-A3-Zwj">
             <objects>
-                <tableViewController id="I9c-tG-ebh" customClass="TasksViewController" customModule="RealmApp" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="I9c-tG-ebh" customClass="TasksViewController" customModule="TaskListRealm" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="iR8-Oy-up4">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="groupTableViewBackgroundColor"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="TasksCell" textLabel="nF7-gY-Xeb" detailTextLabel="C8N-da-m8O" style="IBUITableViewCellStyleSubtitle" id="GNi-1Y-gD9">
-                                <rect key="frame" x="0.0" y="49.5" width="414" height="55.5"/>
+                                <rect key="frame" x="0.0" y="32" width="414" height="55.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="GNi-1Y-gD9" id="h1M-Fh-5ez">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="55.5"/>
