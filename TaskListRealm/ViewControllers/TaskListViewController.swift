@@ -38,10 +38,20 @@ class TaskListViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "TaskListCell", for: indexPath)
-        var content = cell.defaultContentConfiguration()
         let taskList = taskLists[indexPath.row]
+        var content = cell.defaultContentConfiguration()
         content.text = taskList.name
-        content.secondaryText = "\(taskList.tasks.count)"
+        cell.accessoryType = .none
+        
+        let currentTasks = taskList.tasks.filter("isComplete == false")
+        if taskList.tasks.isEmpty {
+            content.secondaryText = "0"
+        } else if currentTasks.isEmpty {
+            content.secondaryText = ""
+            cell.accessoryType = .checkmark
+        } else {
+            content.secondaryText = "\(currentTasks.count)"
+        }
         cell.contentConfiguration = content
         return cell
     }
@@ -83,13 +93,13 @@ class TaskListViewController: UITableViewController {
     }
 
     @IBAction func sortingList(_ sender: UISegmentedControl) {
-            if sender.selectedSegmentIndex == 0{
-                self.taskLists = self.taskLists.sorted(byKeyPath: "date", ascending: false)
-            } else {
-                self.taskLists = self.taskLists.sorted(byKeyPath: "name")
-            }
-            tableView.reloadData()
-        }
+         if sender.selectedSegmentIndex == 0 {
+            taskLists = taskLists.sorted(byKeyPath: "date", ascending: true)
+         } else {
+             taskLists = taskLists.sorted(byKeyPath: "name", ascending: true)
+         }
+         tableView.reloadData()
+     }
     
     @objc private func addButtonPressed() {
         showAlert()
